@@ -1,21 +1,11 @@
-import _ from "lodash";
+import { curry } from "lodash";
 
-// Swaps 1 and 2 arguments
-const rearg2to1 = _.partial(_.rearg, _, [1, 0]);
+export { flowRight as compose } from "lodash/fp";
 
-// curries function with 2 arity
-const curry2 = _.partial(_.curry, _, 2);
-
-export const split = curry2(
-    rearg2to1(_.split)
-);
-
-export const match = curry2(
+export const match = curry(
     (re: RegExp, str: string) => str.match(re)
 );
 
-export const filter = curry2(
-    rearg2to1(_.filter)
-);
-
-export { reduce } from "lodash/fp";
+export const append = curry(
+    (str1: string, str2: string) => str2.concat(str1)
+)
