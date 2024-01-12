@@ -8,7 +8,7 @@
 // };
 
 import {flow, prop, sortBy, last} from "lodash/fp";
-import {append} from "../util";
+import {append} from "../util/basic";
 
 export const fastestCar = flow(
     sortBy(prop('horsepower')),
