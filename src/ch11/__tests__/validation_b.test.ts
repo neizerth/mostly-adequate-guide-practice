@@ -5,9 +5,6 @@ import { Maybe, Task, Either, identity, albert } from "../../util/book.js";
 describe('Exercise B', () => {
     test('checking base call', () => {
         const result = findNameById(1);
-
-        console.log(result);
-
         expect(result).toBeInstanceOf(Task);
     });
 

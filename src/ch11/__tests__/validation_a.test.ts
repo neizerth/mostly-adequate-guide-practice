@@ -14,8 +14,6 @@ describe('Exercise A', () => {
     test('adding 2 Maybe instances', () => {
         const result = eitherToMaybe(left('some error'));
 
-        console.log(result.$value);
-
         expect(result).toBeInstanceOf(Maybe);
         expect(result.isNothing).toBe(true);
     });

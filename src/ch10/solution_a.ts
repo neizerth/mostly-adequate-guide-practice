@@ -1,5 +1,6 @@
 // Write a function that adds two possibly null numbers together using `Maybe` and `ap`.
 
+// @ts-ignore
 import { Maybe, add } from '../util/book';
 
 // safeAdd :: Maybe Number -> Maybe Number -> Maybe Number

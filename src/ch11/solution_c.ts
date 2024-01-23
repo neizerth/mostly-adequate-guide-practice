@@ -5,8 +5,8 @@
 //   split :: String -> String -> [String]
 //   intercalate :: String -> [String] -> String
 
+// @ts-ignore
 import { split, intercalate, List, Either, map, IO, prop, head, join, traverse, sequence, identity } from "../util/book";
-import {flow} from "lodash/fp";
 
 // strToList :: String -> [Char]
 export const strToList = split('');
