@@ -22,7 +22,6 @@ describe('Exercise C', () => {
 
     test('wrong result', () => {
         const result = joinMailingList('notanemail');
-        console.log(result);
 
         expect(getResult(result)).toBe('invalid email');
     });

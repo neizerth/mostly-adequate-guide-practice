@@ -459,7 +459,7 @@ class List {
     traverse(of, fn) {
         return this.$value.reduce(
             (f, a) => fn(a).map(b => bs => bs.concat(b)).ap(f),
-            of(new List([])),
+            of(new List([]) ),
         );
     }
 }
